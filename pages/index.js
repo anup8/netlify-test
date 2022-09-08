@@ -13,7 +13,7 @@ export default function Home() {
       <main>
         <Header title="Hello ! I am Padee 🤣 🤣" />
         <p className="description">
-          <code>My Website coming soon. STAY TUNED !!!</code>
+          <code>My portfolio website coming soon. STAY TUNED !!!</code>
         </p>
       </main>
 
