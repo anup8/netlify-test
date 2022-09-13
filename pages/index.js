@@ -1,23 +1,13 @@
 import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import HomePage from '../Components/HomePage'
+import HeadTag from '../Components/HeadTag'
 
-export default function Home() {
+export default function Home({ currentTheme }) {
+
   return (
-    <div className="container">
-      <Head>
-        <title>Ranjita Pokhrel</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
-        <Header title="Hello ! I am Padee 🤣 🤣" />
-        <p className="description">
-          <code>My portfolio website coming soon. STAY TUNED !!!</code>
-        </p>
-      </main>
-
-      {/* <Footer /> */}
+    <div>
+      <HeadTag page='Home'/>
+      <HomePage currentTheme={currentTheme} />
     </div>
   )
 }
